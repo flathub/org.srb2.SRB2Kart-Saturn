@@ -142,7 +142,7 @@ modules:
       - type: file
         path: srb2kart.sh
       - type: file
-        path: org.srb2.SRB2Kart-galaxy.metainfo.xml
+        path: org.srb2.SRB2Kart-Saturn.metainfo.xml
 
   - name: srb2kart-assets
     buildsystem: simple
