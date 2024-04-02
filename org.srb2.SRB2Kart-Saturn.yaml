@@ -109,8 +109,8 @@ modules:
       - /share/doc
     sources:
       - type: archive
-        url: https://lib.openmpt.org/files/libopenmpt/src/libopenmpt-0.7.5+release.autotools.tar.gz
-        sha256: 59dd550ca245a4a48e6fbf1e2f6176190125f07fe5d044738f2e4e6c231dff0a
+        url: https://lib.openmpt.org/files/libopenmpt/src/libopenmpt-0.7.6+release.autotools.tar.gz
+        sha256: 162d72a306bb2e114c24fa25267d0d0a0ac16f39fd95a5c0dfc75a666ee5e4f5
         x-checker-data:
           type: anitya
           project-id: 141468
@@ -139,7 +139,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/Indev450/SRB2Kart-Saturn.git
-        commit: 1b8b92925ae78ced1f5cd01d971886a93d497891
+        commit: 8b72cc6b01a1edb27928c9077e6497884fee5ce0
       - type: file
         path: srb2kart.sh
       - type: file
@@ -157,9 +157,9 @@ modules:
         size: 220991971
       - type: extra-data
         filename: saturn-assets.zip
-        url: https://github.com/Indev450/SRB2Kart-Saturn/releases/download/v5.1/Srb2_Kart_v1.6_Saturn_v5.1_64bit.zip
-        sha256: ca47c824a3e2f45ad3c5d4065959973c55d420db5eeeb4d785c2e8cf2908821a
-        size: 5517663
+        url: https://github.com/Indev450/SRB2Kart-Saturn/releases/download/v6/Srb2_Kart_v1.6_Saturn_v6_64bit.zip
+        sha256: 028664d4df394c649ad56f998938912c1d52d111091e5e7cc017132f552991ac
+        size: 6493924
       - type: script
         commands:
           - unzip Data.zip *.kart srb2.srb mdls* > /dev/null
