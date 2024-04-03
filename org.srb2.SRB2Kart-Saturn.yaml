@@ -117,6 +117,21 @@ modules:
           stable-only: true
           url-template: https://lib.openmpt.org/files/libopenmpt/src/libopenmpt-$version+release.autotools.tar.gz
 
+  - name: libbacktrace
+    buildsystem: autotools
+    no-autogen: true
+    build-options:
+      strip: false
+      no-debuginfo: true
+    cleanup:
+      - /include
+      - /lib/*.a
+      - /lib/*.la
+    sources:
+      - type: git
+        url: https://github.com/ianlancetaylor/libbacktrace.git
+        commit: 7ead8c1ea2f4aeafe9c5b9ef8a9461a9ba781aa8
+
   - name: srb2kart
     buildsystem: simple
     build-options:
