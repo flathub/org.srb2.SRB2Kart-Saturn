@@ -172,7 +172,7 @@ modules:
         size: 220991971
       - type: extra-data
         filename: saturn-assets.zip
-        url: https://github.com/Indev450/SRB2Kart-Saturn/releases/download/v6/Srb2_Kart_v1.6_Saturn_v6_64bit.zip
+        url: https://github.com/Indev450/SRB2Kart-Saturn/releases/download/v6.1/Srb2_Kart_v1.6_Saturn_v6.1_64bit.zip 
         sha256: e7bcbab29139f07483e3be76dc686873c5e3f8b82c02175520ac8245efb212ab
         size: 6649494
       - type: script
