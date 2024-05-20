@@ -37,7 +37,7 @@ modules:
     sources:
       - type: archive
         url: https://github.com/libgme/game-music-emu/archive/refs/tags/0.6.3.tar.gz
-        sha256: 2fe64e09ab228aa9b055cd69997a2b49179011e091127cf801161fb5bf5ae8cf
+        sha256: 4c5a7614acaea44e5cb1423817d2889deb82674ddbc4e3e1291614304b86fca0
         x-checker-data:
           type: anitya
           project-id: 866
