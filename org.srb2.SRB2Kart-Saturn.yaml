@@ -36,13 +36,13 @@ modules:
       - /lib/pkgconfig
     sources:
       - type: archive
-        url: https://bitbucket.org/mpyne/game-music-emu/downloads/game-music-emu-0.6.3.tar.xz
-        sha256: aba34e53ef0ec6a34b58b84e28bf8cfbccee6585cebca25333604c35db3e051d
+        url: https://github.com/libgme/game-music-emu/archive/refs/tags/0.6.3.tar.gz
+        sha256: 4c5a7614acaea44e5cb1423817d2889deb82674ddbc4e3e1291614304b86fca0
         x-checker-data:
           type: anitya
           project-id: 866
           stable-only: true
-          url-template: https://bitbucket.org/mpyne/game-music-emu/downloads/game-music-emu-$version.tar.xz
+          url-template: https://github.com/libgme/game-music-emu/archive/refs/tags/$version.tar.gz 
 
   - name: libmodplug
     buildsystem: autotools
@@ -109,8 +109,8 @@ modules:
       - /share/doc
     sources:
       - type: archive
-        url: https://lib.openmpt.org/files/libopenmpt/src/libopenmpt-0.7.6+release.autotools.tar.gz
-        sha256: 162d72a306bb2e114c24fa25267d0d0a0ac16f39fd95a5c0dfc75a666ee5e4f5
+        url: https://lib.openmpt.org/files/libopenmpt/src/libopenmpt-0.7.7+release.autotools.tar.gz
+        sha256: 58c6a28972126828a6f658e084aee7aa8f8bfdb75a0bd0e345c7ff2a6d9ef08c
         x-checker-data:
           type: anitya
           project-id: 141468
@@ -143,8 +143,7 @@ modules:
           env:
             ARCH_MAKE_ARGS: LINUX64=1 X86_64=1
     build-commands:
-      - make -C src -j $FLATPAK_BUILDER_N_JOBS NOUPX=1 SDL=1 HAVE_DISCORDRPC=1
-        $ARCH_MAKE_ARGS
+      - make -C src -j $FLATPAK_BUILDER_N_JOBS NOUPX=1 SDL=1 HAVE_DISCORDRPC=1 NOSCREENFBO=1 $ARCH_MAKE_ARGS
       - install -D -m 755 bin/Linux*/Release/lsdl2srb2kart $FLATPAK_DEST/bin/srb2kart
       - install -D -m 644 srb2.png $FLATPAK_DEST/share/icons/hicolor/256x256/apps/$FLATPAK_ID.png
       - install -D -m 644 src/sdl/srb2icon.png $FLATPAK_DEST/share/icons/hicolor/64x64/apps/$FLATPAK_ID.png
@@ -154,7 +153,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/Indev450/SRB2Kart-Saturn.git
-        commit: e0d0120337881cb9334fe675ea95001825f3c549
+        commit: 8dafc2d3d90a0fa4f31274b9fa08132da32215bf
       - type: file
         path: srb2kart.sh
       - type: file
@@ -172,12 +171,12 @@ modules:
         size: 220991971
       - type: extra-data
         filename: saturn-assets.zip
-        url: https://github.com/Indev450/SRB2Kart-Saturn/releases/download/v6.1/Srb2_Kart_v1.6_Saturn_v6.1_64bit.zip 
-        sha256: e7bcbab29139f07483e3be76dc686873c5e3f8b82c02175520ac8245efb212ab
-        size: 6649494
+        url: https://github.com/Indev450/SRB2Kart-Saturn/releases/download/v6.2/Just-Extra-Files.zip
+        sha256: 8258f0045845384136c92d651ed11c03cf1d5a6bb5a97d5b4198f14bd81d9895
+        size: 14866
       - type: script
         commands:
           - unzip Data.zip *.kart srb2.srb mdls* > /dev/null
-          - unzip -j saturn-assets.zip '*/*.kart' > /dev/null
+          - unzip saturn-assets.zip > /dev/null
           - rm Data.zip saturn-assets.zip
         dest-filename: apply_extra
