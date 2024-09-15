@@ -19,23 +19,23 @@
     </screenshot>
     <screenshot>
       <image>https://user-images.githubusercontent.com/1964655/82821946-486b3780-9ea5-11ea-8818-f1a801000985.png</image>
-      <caption>Game modes</caption>
+      <caption>Gamemodes</caption>
     </screenshot>
     <screenshot>
       <image>https://user-images.githubusercontent.com/1964655/82821921-3d180c00-9ea5-11ea-937b-e1f53fe6c686.png</image>
-      <caption>Game play as Sonic</caption>
+      <caption>Gameplay as Sonic</caption>
     </screenshot>
     <screenshot>
       <image>https://user-images.githubusercontent.com/1964655/82821933-41442980-9ea5-11ea-9146-38998161edae.png</image>
-      <caption>Game play as Tails</caption>
+      <caption>Gameplay as Tails</caption>
     </screenshot>
     <screenshot>
       <image>https://user-images.githubusercontent.com/1964655/82821966-502adc00-9ea5-11ea-9cbd-274d7adb479e.png</image>
-      <caption>Game play as Eggman</caption>
+      <caption>Gameplay as Eggman</caption>
     </screenshot>
     <screenshot>
       <image>https://user-images.githubusercontent.com/1964655/82821980-5620bd00-9ea5-11ea-9eec-2835ebb2a262.png</image>
-      <caption>Game play as Metal Sonic</caption>
+      <caption>Gameplay as Metal Sonic</caption>
     </screenshot>
   </screenshots>
   <url type="homepage">https://github.com/Indev450/SRB2Kart-Saturn</url>
@@ -45,7 +45,13 @@
     <binary>srb2kart</binary>
   </provides>
   <releases>
-	<release version="6.2" date="2024-05-20">
+    <release version="7.0" date="2024-09-15">
+      <description>
+        <p>The complete changelog can be found on the build's GitHub repository.</p>
+      </description>
+      <url>https://github.com/Indev450/SRB2Kart-Saturn/releases/tag/v7</url>
+    </release>
+    <release version="6.2" date="2024-05-20">
       <description>
         <p>The complete changelog can be found on the build's GitHub repository.</p>
       </description>

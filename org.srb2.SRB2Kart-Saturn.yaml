@@ -109,8 +109,8 @@ modules:
       - /share/doc
     sources:
       - type: archive
-        url: https://lib.openmpt.org/files/libopenmpt/src/libopenmpt-0.7.8+release.autotools.tar.gz
-        sha256: 87778c8046a226c6cbfb114f4c8e3e27c121b7b3dccce5cb7de45899250274cc
+        url: https://lib.openmpt.org/files/libopenmpt/src/libopenmpt-0.7.9+release.autotools.tar.gz
+        sha256: 0386e918d75d797e79d5b14edd0847165d8b359e9811ef57652c0a356a2dfcf4
         x-checker-data:
           type: anitya
           project-id: 141468
@@ -143,7 +143,7 @@ modules:
           env:
             ARCH_MAKE_ARGS: LINUX64=1 X86_64=1
     build-commands:
-      - make -C src -j $FLATPAK_BUILDER_N_JOBS NOUPX=1 SDL=1 HAVE_DISCORDRPC=1 NOSCREENFBO=1
+      - make -C src -j $FLATPAK_BUILDER_N_JOBS NOUPX=1 SDL=1 HAVE_DISCORDRPC=1
         $ARCH_MAKE_ARGS
       - install -D -m 755 bin/Linux*/Release/lsdl2srb2kart $FLATPAK_DEST/bin/srb2kart
       - install -D -m 644 srb2.png $FLATPAK_DEST/share/icons/hicolor/256x256/apps/$FLATPAK_ID.png
@@ -154,7 +154,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/Indev450/SRB2Kart-Saturn.git
-        commit: 8dafc2d3d90a0fa4f31274b9fa08132da32215bf
+        commit: 0544811c7d37e84e14d7942b81dd01c21bc6f426
       - type: file
         path: srb2kart.sh
       - type: file
@@ -172,7 +172,7 @@ modules:
         size: 220991971
       - type: extra-data
         filename: saturn-assets.zip
-        url: https://github.com/Indev450/SRB2Kart-Saturn/releases/download/v6.2/Just-Extra-Files.zip
+        url: https://github.com/Indev450/SRB2Kart-Saturn/releases/download/v7/Just-Extra-Files.zip
         sha256: 8258f0045845384136c92d651ed11c03cf1d5a6bb5a97d5b4198f14bd81d9895
         size: 14866
       - type: script
