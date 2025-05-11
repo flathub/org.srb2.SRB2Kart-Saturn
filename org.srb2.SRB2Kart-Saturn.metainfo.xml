@@ -45,7 +45,13 @@
     <binary>srb2kart</binary>
   </provides>
   <releases>
-	<release version="7.2" date="2024-11-05">
+    <release version="8.1" date="2025-05-11">
+      <description>
+        <p>The complete changelog can be found on the build's GitHub repository.</p>
+      </description>
+      <url>https://github.com/Indev450/SRB2Kart-Saturn/releases/tag/v8.1</url>
+    </release>
+    <release version="7.2" date="2024-11-05">
       <description>
         <p>The complete changelog can be found on the build's GitHub repository.</p>
       </description>
