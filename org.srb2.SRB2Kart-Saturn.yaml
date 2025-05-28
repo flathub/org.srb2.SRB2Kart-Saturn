@@ -153,7 +153,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/Indev450/SRB2Kart-Saturn.git
-        commit: c68c61975e9e09919edce533b6849eb4725cd109
+        commit: 1e15816057a92f84d930c78e61d5609f4d5681fb
       - type: file
         path: srb2kart.sh
       - type: file
