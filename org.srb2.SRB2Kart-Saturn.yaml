@@ -153,7 +153,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/Indev450/SRB2Kart-Saturn.git
-        commit: 1e15816057a92f84d930c78e61d5609f4d5681fb
+        commit: 2049353647993c93a8f7bf5ddd60b17c0365bb71
       - type: file
         path: srb2kart.sh
       - type: file
@@ -171,9 +171,9 @@ modules:
         size: 220991971
       - type: extra-data
         filename: saturn-assets.zip
-        url: https://github.com/Indev450/SRB2Kart-Saturn/releases/download/v8.1/Saturn-Extra-Files-v8.zip
-        sha256: 0b8ba61feee60346eea2aadc9768379d066eb3763fd35ea9f4520934462a5527
-        size: 26903
+        url: https://github.com/Indev450/SRB2Kart-Saturn/releases/download/v8.3/Saturn-Extra-Files-v8.3.zip
+        sha256: a6eb7dff790534fc6b18f508a42696e5c48ede0343dbeaaf434109e727674a45
+        size: 27492
       - type: script
         commands:
           - unzip Data.zip *.kart srb2.srb mdls* > /dev/null
