@@ -94,8 +94,8 @@ modules:
       - /include
     sources:
       - type: git
-        url: https://github.com/discord/discord-rpc.git
-        commit: 963aa9f3e5ce81a4682c6ca3d136cddda614db33
+        url: https://github.com/harmonytf/discord-rpc.git
+        commit: deedb52ce511728458641783cb6d80c7bbdde38c
 
   - name: libopenmpt
     config-opts:
