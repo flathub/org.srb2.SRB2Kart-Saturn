@@ -134,7 +134,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/ianlancetaylor/libbacktrace.git
-        commit: 7ead8c1ea2f4aeafe9c5b9ef8a9461a9ba781aa8
+        commit: 793921876c981ce49759114d7bb89bb89b2d3a2d
 
   - name: srb2kart
     buildsystem: simple
