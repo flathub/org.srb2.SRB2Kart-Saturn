@@ -1,6 +1,6 @@
 app-id: org.srb2.SRB2Kart-Saturn
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 command: srb2kart.sh
 finish-args:
@@ -72,14 +72,18 @@ modules:
       - /lib/pkgconfig
       - /share/doc
     sources:
-      - type: archive
-        url: https://github.com/Tencent/rapidjson/archive/refs/tags/v1.1.0.tar.gz
-        sha256: bf7ced29704a1e696fbccf2a2b4ea068e7774fa37f6d7dd4039d0787f8bed98e
-        x-checker-data:
-          type: anitya
-          project-id: 7422
-          stable-only: true
-          url-template: https://github.com/Tencent/rapidjson/archive/refs/tags/v$version.tar.gz
+      - type: git
+        url: https://github.com/Tencent/rapidjson
+        commit: 24b5e7a8b27f42fa16b96fc70aade9106cf7102f
+    # RapidJSON doesn't make new releases or tags since 2016
+    # Therefore, I will need to use the latest commit, and
+    # it seems I cannot monitor it with Flathub's External Data Checker
+    #
+    #    x-checker-data:
+    #      type: anitya
+    #      project-id: 7422
+    #      stable-only: true
+    #      url-template: https://github.com/Tencent/rapidjson/archive/refs/tags/v$version.tar.gz
 
   - name: discord-rpc
     buildsystem: cmake-ninja
@@ -90,8 +94,8 @@ modules:
       - /include
     sources:
       - type: git
-        url: https://github.com/discord/discord-rpc.git
-        commit: 963aa9f3e5ce81a4682c6ca3d136cddda614db33
+        url: https://github.com/harmonytf/discord-rpc.git
+        commit: deedb52ce511728458641783cb6d80c7bbdde38c
 
   - name: libopenmpt
     config-opts:
@@ -130,7 +134,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/ianlancetaylor/libbacktrace.git
-        commit: 7ead8c1ea2f4aeafe9c5b9ef8a9461a9ba781aa8
+        commit: 793921876c981ce49759114d7bb89bb89b2d3a2d
 
   - name: srb2kart
     buildsystem: simple
