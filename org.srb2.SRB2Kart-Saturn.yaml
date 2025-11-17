@@ -148,7 +148,7 @@ modules:
             ARCH_MAKE_ARGS: LINUX64=1 X86_64=1
     build-commands:
       - make -C src -j $FLATPAK_BUILDER_N_JOBS NOUPX=1 SDL=1 HAVE_DISCORDRPC=1 $ARCH_MAKE_ARGS
-      - install -D -m 755 run/build/srb2kart/binlsdl2srb2kart $FLATPAK_DEST/bin/srb2kart
+      - install -D -m 755 run/build/srb2kart/bin/lsdl2srb2kart $FLATPAK_DEST/bin/srb2kart
       - install -D -m 644 srb2.png $FLATPAK_DEST/share/icons/hicolor/256x256/apps/$FLATPAK_ID.png
       - install -D -m 644 src/sdl/srb2icon.png $FLATPAK_DEST/share/icons/hicolor/64x64/apps/$FLATPAK_ID.png
       - install -D -m 755 srb2kart.sh $FLATPAK_DEST/bin/srb2kart.sh
