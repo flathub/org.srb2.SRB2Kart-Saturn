@@ -48,6 +48,7 @@
   </screenshots>
   <url type="homepage">https://github.com/Indev450/SRB2Kart-Saturn</url>
   <url type="bugtracker">https://github.com/Indev450/SRB2Kart-Saturn/issues</url>
+  <url type="vcs-browser">https://github.com/Indev450/SRB2Kart-Saturn</url>
   <developer_name>SRB2Kart Saturn contributors</developer_name>
   <provides>
     <binary>srb2kart</binary>
