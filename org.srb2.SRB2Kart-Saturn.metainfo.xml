@@ -54,7 +54,13 @@
     <binary>srb2kart</binary>
   </provides>
   <releases>
-    <release version="9.2" date="2025-12-06">
+    <release version="10.0" date="2026-09-17">
+      <description>
+        <p>The complete changelog can be found on the build's GitHub repository.</p>
+      </description>
+      <url>https://github.com/Indev450/SRB2Kart-Saturn/releases/tag/v10</url>
+    </release>
+	<release version="9.2" date="2025-12-06">
       <description>
         <p>The complete changelog can be found on the build's GitHub repository.</p>
       </description>
