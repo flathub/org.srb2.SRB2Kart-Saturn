@@ -27,7 +27,7 @@ cleanup-commands:
 
 modules:
   - shared-modules/glu/glu-9.json
-  - shared-modules/SDL/SDL_mixer-1.2.12.json
+  - shared-modules/SDL2/SDL2_mixer.json
 
   - name: game-music-emu
     buildsystem: cmake-ninja
