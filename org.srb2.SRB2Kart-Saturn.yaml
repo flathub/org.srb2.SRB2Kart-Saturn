@@ -52,12 +52,14 @@ modules:
       - /lib/pkgconfig
     sources:
       - type: archive
-        url: https://sourceforge.net/projects/modplug-xmms/files/libmodplug/0.8.9.0/libmodplug-0.8.9.0.tar.gz
+        url: 
+          https://sourceforge.net/projects/modplug-xmms/files/libmodplug/0.8.9.0/libmodplug-0.8.9.0.tar.gz
         sha256: 457ca5a6c179656d66c01505c0d95fafaead4329b9dbaa0f997d00a3508ad9de
         x-checker-data:
           type: anitya
           project-id: 5669
-          url-template: https://sourceforge.net/projects/modplug-xmms/files/libmodplug/$version/libmodplug-$version.tar.gz
+          url-template: 
+            https://sourceforge.net/projects/modplug-xmms/files/libmodplug/$version/libmodplug-$version.tar.gz
 
   - name: rapidjson
     buildsystem: cmake-ninja
@@ -113,13 +115,15 @@ modules:
       - /share/doc
     sources:
       - type: archive
-        url: https://lib.openmpt.org/files/libopenmpt/src/libopenmpt-0.8.9+release.autotools.tar.gz
-        sha256: d7ce84fd05d686c4bcf66af40eae857afa371442db60eeda3f874bd6cf6fc318
+        url: 
+          https://lib.openmpt.org/files/libopenmpt/src/libopenmpt-0.8.10+release.autotools.tar.gz
+        sha256: 976d259288c40cd285771f77d09eff3d02514511d5677ecfcfb53be5013317e2
         x-checker-data:
           type: anitya
           project-id: 141468
           stable-only: true
-          url-template: https://lib.openmpt.org/files/libopenmpt/src/libopenmpt-$version+release.autotools.tar.gz
+          url-template: 
+            https://lib.openmpt.org/files/libopenmpt/src/libopenmpt-$version+release.autotools.tar.gz
 
   - name: libbacktrace
     buildsystem: autotools
@@ -175,7 +179,8 @@ modules:
         size: 220991971
       - type: extra-data
         filename: saturn-assets.zip
-        url: https://github.com/Indev450/SRB2Kart-Saturn/releases/download/v10/Saturn-Extra-Files-v10.zip
+        url: 
+          https://github.com/Indev450/SRB2Kart-Saturn/releases/download/v10/Saturn-Extra-Files-v10.zip
         sha256: 3d11d28d952e4dff1f6881a831cecd611077d0b1d46167d3855e781bdf102b53
         size: 29104
       - type: script
