@@ -160,7 +160,7 @@ modules:
       - install -D -m 644 -t $FLATPAK_DEST/share/metainfo $FLATPAK_ID.metainfo.xml
     sources:
       - type: git
-        url: https://github.com/Indev450/SRB2Kart-Saturn.git
+        url: https://git.mixedup.dev/saturn/SRB2Kart-Saturn
         commit: 75d24743c1dedd383d615f955e921b133829fd3e
       - type: file
         path: srb2kart.sh
@@ -180,7 +180,7 @@ modules:
       - type: extra-data
         filename: saturn-assets.zip
         url: 
-          https://github.com/Indev450/SRB2Kart-Saturn/releases/download/v10/Saturn-Extra-Files-v10.zip
+          https://git.mixedup.dev/saturn/SRB2Kart-Saturn/releases/download/v10.1/Saturn-Extra-Files-v10.zip
         sha256: 3d11d28d952e4dff1f6881a831cecd611077d0b1d46167d3855e781bdf102b53
         size: 29104
       - type: script
